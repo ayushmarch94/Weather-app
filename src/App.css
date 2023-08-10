@@ -11,9 +11,8 @@
 
 body{
   background : url("./imgaes/bg.jpg");
-  /* background: url('./imgaes/BgN.jpg'); */
-  /* backdrop-filter: blur(6px); */
   background-repeat: no-repeat;
+  background-size: cover;
   background-size: cover;
 }
 
