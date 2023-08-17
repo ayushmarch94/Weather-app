@@ -29,7 +29,7 @@ function App() {
     <>
       <div id="heading">
         
-        <p><img src={require('./imgaes/weather.png')} width={30} />Current Weather Forcaste</p>
+        <p><img src={require('./images/weather.png')} width={30} />Current Weather Forcaste</p>
       </div>
       <div id="page">
         <div id="main">
@@ -38,7 +38,7 @@ function App() {
           </div>
           <div id="mid">
             <div id="location">
-              {city}
+              {/* {city} */}
             </div>
           </div>
           <div id="lower">
@@ -56,7 +56,6 @@ function App() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </>
