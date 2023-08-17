@@ -10,7 +10,6 @@
 
 
 body{
-  background : url("./imgaes/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-size: cover;
@@ -22,14 +21,15 @@ body{
   align-items: center;
 }
 
+#heading{
+  display: flex;
+  justify-content: center;
+}
+
 #heading p{
-  margin-left: 35%;
-  margin-top: 30px;
   border: 2px solid red;
-  width: 30%;
-  border-radius: 10px;
+  width: 100%;
   background-color: white;
-  /* backdrop-filter: blur(20px); */
   padding: 5px;
   box-shadow: 5px 5px 10px;
 }
@@ -40,26 +40,26 @@ body{
 
 #main{
   border-radius: 10px;
-  width: 300px;
+  width: 60%;
   height: 400px;
   margin-top: 30px;
-  /* background-color: rgba(255, 255, 255, 0.4); */
   backdrop-filter: blur(5px);
   box-shadow: 5px 5px 10px  black;
+  border: 3px solid slategray;
+  background-color: whitesmoke;
 }
 
 #navbar{
   height: 50px;
-  width: 200px;
+  width: 100%;
   margin-left: 40px;
   margin-top: 20px;
 }
 input{
-  border: 2px solid red;
-  border-radius: 5px;
   height: 50px;
-  width: 200px;
+  width: 40%;
   background-color: white;
+  border-radius: 10px;
 }
 
 #mid{
@@ -84,42 +84,11 @@ input{
   margin-left: 10px;
 }
 
-#animation{
-  height: 135px;
-  width: 300px;
-  margin-top: 20px;
-  border-radius: 100px 100px 0px 0px;
-  background-color: #61dafb;
-  box-shadow: inset 0px 0px 30px 10px rgb(0, 168, 253);
-  animation-name : wave; 
-  animation-duration : 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
-}
-
-@keyframes wave {
-  0%{
-    border-radius: 100px 100px 0px 0px;
-  }
-
-  33%{
-    border-radius: 70px 130px 0px 0px;
-  }
-  
-  66%{
-    border-radius: 100px 100px 0px 0px;
-  }
-
-  100%{
-    border-radius: 130px 70px 0px 0px;
-  }
-}
-
 #lowermid{
   height: 70px;
   width: 200px;
   margin-top: 30px;
-  margin-left: 70px;
+  margin-left: 10%;
   display: flex;
 }
 
@@ -127,7 +96,7 @@ input{
   height: 50px;
   width: 70px;
   margin-top: 40px;
-  margin-left: 20px;
+  margin-left: 5%;
 }
 
 #unit{
@@ -138,9 +107,8 @@ input{
 }
 
 #lowerlower{
-  font-size: 20px;
-  height: 20px;
-  width: 220px;
-  margin-top: 5px;
+  font-size: 30px;
+  height: 50px;
+  width: 50%;
   margin-left: 70px;
 }

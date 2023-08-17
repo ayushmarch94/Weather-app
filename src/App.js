@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
-  const [city,setCity] = useState('----');
+  const [city,setCity] = useState('');
   const [temperature, setTemperature] = useState('');
   useEffect(() => {
     if (city !== '') {
@@ -34,12 +34,9 @@ function App() {
       <div id="page">
         <div id="main">
           <div id="navbar">
-            <input type='search' placeholder=' Location' onChange={Finder} />
+            <input type='search' placeholder={' Location : '} onChange={Finder} />
           </div>
           <div id="mid">
-            <div id="logo">
-              <img src={require('./imgaes/map.png')} width="50px" />
-            </div>
             <div id="location">
               {city}
             </div>
