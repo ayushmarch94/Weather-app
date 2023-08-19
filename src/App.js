@@ -34,7 +34,7 @@ function App() {
       <div id="page">
         <div id="main">
           <div id="navbar">
-            <input type='search' placeholder={' Location : Delhi '} onChange={Finder} />
+            <input type='search' placeholder={' Location : Random '} onChange={Finder} />
           </div>
           <div id="mid">
             <div id="location">
