@@ -37,9 +37,6 @@ function App() {
             <input type='search' placeholder={' Location : Random '} onChange={Finder} />
           </div>
           <div id="mid">
-            <div id="location">
-              {/* {city} */}
-            </div>
           </div>
           <div id="lower">
             <div id="animation">
@@ -52,7 +49,8 @@ function App() {
                 </div>
               </div>
               <div id="lowerlower">
-                Current Temprature
+                Current Temprature<br /> 
+                {city}
               </div>
             </div>
           </div>
