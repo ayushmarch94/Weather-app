@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import "./ResLong.css";
 import Input from "./component/Input";
+import "./Res.css";
 
 function App() {
   const [city, setCity] = useState("Delhi");
@@ -47,7 +48,7 @@ function App() {
               <div id="lowerlower">
                 Current Temprature
                 <br />
-                {city}
+                of {city}
               </div>
             </div>
           </div>
