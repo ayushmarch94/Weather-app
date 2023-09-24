@@ -7,7 +7,7 @@ export default function Input({ Finder }) {
     <div id="navbar">
       <input
         type="search"
-        placeholder={" Location : Random "}
+        placeholder={" Location : "}
         onChange={Finder}
       />
     </div>
