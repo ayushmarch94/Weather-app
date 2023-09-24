@@ -31,6 +31,7 @@ export default function App() {
             type="search"
             placeholder="Enter Location"
             onChange={handleInputChange}
+            required
           />
           <button type="submit">Submit</button>
         </form>

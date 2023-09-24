@@ -32,6 +32,7 @@ body {
 #main p{
     font-size: 40px;
     color: white;
+    text-align: center;
 }
 
 #form{
