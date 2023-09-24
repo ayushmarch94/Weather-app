@@ -56,13 +56,30 @@ body{
   width: 100%;
   margin-left: 40px;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 input{
   height: 50px;
   width: 100%;
   background-color: white;
   border-radius: 10px;
-  
+}
+
+#navbar button{
+  margin-left:10px;
+  background-color: rgb(0, 162, 255);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+#navbar button:hover{
+  margin-left:10px;
+  background-color: rgb(0, 162, 255);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
 }
 
 #mid{
