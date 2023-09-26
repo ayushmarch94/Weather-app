@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import "./App.css";
 
 export default function App() {
@@ -16,11 +16,23 @@ export default function App() {
 
   const fetchWeather = () => {
     if (location) {
-      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=7c308b119937245fada5651b91c31922`)
-        .then((response) => response.json())
-        .then((data) => setTemperature(data.main.temp));
+      fetch(
+        `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=7c308b119937245fada5651b91c31922`
+      )
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then((data) => setTemperature(data.main.temp))
+        .catch((error) => {
+          console.error("There has been a problem with your fetch operation: ", error);
+        });
     }
   };
+  
+  
 
   return (
     <div id="container">
@@ -36,11 +48,10 @@ export default function App() {
           <button type="submit">Submit</button>
         </form>
         <div id="display">
-          {location && temperature && (
-            <p>{(temperature - 273).toFixed(2)}°C</p>
-          )}
+          {location && temperature && <p>{(temperature - 273).toFixed(2)}°C</p>}
         </div>
       </div>
+      
     </div>
   );
 }

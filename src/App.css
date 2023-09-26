@@ -42,7 +42,6 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: row;
-
 }
 
 #form input{
@@ -68,4 +67,16 @@ body {
     justify-content: center;
     margin-top: 10px;
     font-size: 30px;
+}
+
+.hourly{
+    display: flex;  
+}
+
+.hour{
+    height: 60px;
+    width: 100px;
+    border: 1px solid white;
+    margin: 30px;
+    border-radius: 10px;
 }
