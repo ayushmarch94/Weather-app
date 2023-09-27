@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 export default function App() {
@@ -27,12 +27,14 @@ export default function App() {
         })
         .then((data) => setTemperature(data.main.temp))
         .catch((error) => {
-          console.error("There has been a problem with your fetch operation: ", error);
+          console.error(
+            "There has been a problem with your fetch operation: ",
+            error
+          );
         });
     }
   };
-  
-  
+
 
   return (
     <div id="container">
@@ -41,17 +43,28 @@ export default function App() {
         <form id="form" onSubmit={handleSubmit}>
           <input
             type="search"
-            placeholder="Enter Location"
+            placeholder="Enter City"
             onChange={handleInputChange}
             required
           />
           <button type="submit">Submit</button>
         </form>
         <div id="display">
+          <p>Temperature : &nbsp; </p>
           {location && temperature && <p>{(temperature - 273).toFixed(2)}°C</p>}
         </div>
+        <div className="hourly">
+          <div className="hour">
+           
+          </div>
+          <div className="hour"></div>
+          <div className="hour"></div>
+          <div className="hour"></div>
+          <div className="hour"></div>
+          <div className="hour"></div>
+          <div className="hour"></div>
+        </div>
       </div>
-      
     </div>
   );
 }
