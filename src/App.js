@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import "./Res.css";
 
 export default function App() {
   const [location, setLocation] = useState("");
