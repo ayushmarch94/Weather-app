@@ -4,6 +4,9 @@ import "./App.css";
 export default function App() {
   const [location, setLocation] = useState("");
   const [temperature, setTemperature] = useState("");
+  const [pressure, setPressure] = useState("");
+  const [humidity, setHumidity] = useState("");
+  const [speed, setSpeed] = useState("");
 
   const handleInputChange = (event) => {
     setLocation(event.target.value);
@@ -25,7 +28,12 @@ export default function App() {
           }
           return response.json();
         })
-        .then((data) => setTemperature(data.main.temp))
+        .then((data) => {
+          setTemperature(data.main.temp);
+          setPressure(data.main.pressure);
+          setHumidity(data.main.humidity);
+          setSpeed(data.wind.speed);
+        })
         .catch((error) => {
           console.error(
             "There has been a problem with your fetch operation: ",
@@ -34,7 +42,6 @@ export default function App() {
         });
     }
   };
-
 
   return (
     <div id="container">
@@ -55,14 +62,17 @@ export default function App() {
         </div>
         <div className="hourly">
           <div className="hour">
-           
+            <p className="pElement">Pressure in mb :  &nbsp;</p>
+            {location && pressure}
           </div>
-          <div className="hour"></div>
-          <div className="hour"></div>
-          <div className="hour"></div>
-          <div className="hour"></div>
-          <div className="hour"></div>
-          <div className="hour"></div>
+          <div className="hour">
+            <p>Humidity in % :  &nbsp;</p>
+            {location && humidity}
+          </div>
+          <div className="hour">
+            <p>wind speed :  &nbsp;</p>
+            {location && speed}
+          </div>
         </div>
       </div>
     </div>
