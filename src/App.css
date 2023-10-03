@@ -6,7 +6,7 @@
 body {
     height: 100vh;
     margin: 0;
-    background: linear-gradient(45deg, white, blue);
+    background: linear-gradient(45deg, #7474BF, blue);
   }
   
 
@@ -22,7 +22,7 @@ body {
     margin-top: 50px;
     background-color: white;
     border-radius: 10px;
-    background-color: rgb(72, 108, 255);
+    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column; 
@@ -30,7 +30,7 @@ body {
 
 #main p{
     font-size: 30px;
-    color: white;
+    color: black;
     text-align: center;
 
 }
@@ -83,13 +83,13 @@ body {
 .hour{
     height: 85px;
     width: 35%;
-    border: 1px solid white;
+    border: 1px solid red;
     border-radius: 10px;
     margin: 5px;
     font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
 }
 

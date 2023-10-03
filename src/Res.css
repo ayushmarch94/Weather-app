@@ -1,6 +1,6 @@
 @media screen and (max-width: 953px) {
   body {
-    background: linear-gradient(to right, white, blue);
+    background: linear-gradient(45deg, #7474BF, blue);
     #main {
       border: 2px solid white;
       height: 600px;
@@ -8,7 +8,7 @@
       margin-top: 50px;
       background-color: white;
       border-radius: 10px;
-      background-color: rgb(72, 108, 255);
+      background-color: white;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -25,7 +25,7 @@
     .hour {
       height: 100px;
       width: 100%;
-      border: 1px solid white;
+      border: 1px solid red;
       border-radius: 10px;
       margin: 5px;
       font-size: 30px;
