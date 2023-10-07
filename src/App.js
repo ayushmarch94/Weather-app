@@ -58,21 +58,21 @@ export default function App() {
           <button type="submit">Submit</button>
         </form>
         <div id="display">
-          <p>Temperature : &nbsp; </p>
+          <p id="temp">Temperature  &nbsp; </p>
           {location && temperature && <p>{(temperature - 273).toFixed(2)}°C</p>}
         </div>
         <div className="hourly">
           <div className="hour">
-            <p className="pElement">Pressure in mb :  &nbsp;</p>
-            {location && pressure}
+            <p className="pElement">Pressure in mb  &nbsp;</p>
+            <p>{location && pressure}</p>
           </div>
           <div className="hour">
-            <p>Humidity in % :  &nbsp;</p>
-            {location && humidity}
+            <p>Humidity in % &nbsp;</p>
+            <p>{location && humidity}</p>
           </div>
           <div className="hour">
-            <p>wind speed :  &nbsp;</p>
-            {location && speed}
+            <p>wind speed  &nbsp;</p>
+            <p>{location && speed}</p>
           </div>
         </div>
       </div>
