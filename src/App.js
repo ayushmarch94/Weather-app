@@ -47,7 +47,7 @@ export default function App() {
   return (
     <div id="container">
       <div id="main">
-        <p>Weather Forecast </p>
+        <p>Weather Details</p>
         <form id="form" onSubmit={handleSubmit}>
           <input
             type="search"
@@ -63,16 +63,17 @@ export default function App() {
         </div>
         <div className="hourly">
           <div className="hour">
-            <p className="pElement">Pressure in mb  &nbsp;</p>
-            <p>{location && pressure}</p>
+            <p className="pElement">Pressure in &nbsp;</p>
+            <p>{location && pressure}</p>mb
           </div>
           <div className="hour">
-            <p>Humidity in % &nbsp;</p>
-            <p>{location && humidity}</p>
+            <p>Humidity in &nbsp;</p>
+            <p>{location && humidity}</p>%
           </div>
           <div className="hour">
-            <p>wind speed  &nbsp;</p>
+            <p>wind speed in &nbsp;</p>
             <p>{location && speed}</p>
+            m/s
           </div>
         </div>
       </div>
