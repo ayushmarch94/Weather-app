@@ -37,6 +37,20 @@
       align-items: center;
       color: white;
     }
+    #form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #form input{
+      margin: 10px;
+    }
+
+    #form button{
+      margin: 10px;
+    }
   }
   }
 

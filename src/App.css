@@ -82,7 +82,7 @@ body {
 .hour{
     height: 85px;
     width: 35%;
-    border: 1px solid red;
+    background: linear-gradient(45deg, #7474BF, blue);;
     border-radius: 10px;
     margin: 5px;
     font-size: 30px;

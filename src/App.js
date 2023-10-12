@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import "./Res.css";
+import "./ResLong.css"
 
 export default function App() {
   const [location, setLocation] = useState("");
@@ -63,15 +64,15 @@ export default function App() {
         </div>
         <div className="hourly">
           <div className="hour">
-            <p className="pElement">Pressure in &nbsp;</p>
+            <p className="pElement">Pressure &nbsp;</p>
             <p>{location && pressure}</p>mb
           </div>
           <div className="hour">
-            <p>Humidity in &nbsp;</p>
+            <p>Humidity &nbsp;</p>
             <p>{location && humidity}</p>%
           </div>
           <div className="hour">
-            <p>wind speed in &nbsp;</p>
+            <p>wind speed &nbsp;</p>
             <p>{location && speed}</p>
             m/s
           </div>
